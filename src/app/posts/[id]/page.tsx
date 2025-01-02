@@ -98,7 +98,9 @@ const Post = ({ params }: { params: { id: string } }) => {
     <div className='max-w-3xl mx-auto p-5'>
       <h1 className='md:text-4xl font-bold text-red-600 text-center'>{post.title}</h1>
       {post.image && (
+        /* eslint-disable @next/next/no-img-element */
         <img src={post.image} alt={post.title} className='w-full h-auto mt-4 mx-auto rounded-md' />
+        /* eslint-enable @next/next/no-img-element */
       )}
       <div className='mt-6 text-lg text-slate-700'>{renderParagraphs(post.description)}</div>
       <CommentSection postId={post.id} />

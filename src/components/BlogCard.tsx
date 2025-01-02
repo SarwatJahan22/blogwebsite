@@ -12,11 +12,12 @@ interface BlogCardProps {
 const BlogCard = ({post, isDarkBackground}: BlogCardProps) => {
   return (
    <Card className={`p-4 ${isDarkBackground ? 'bg-slate-800 text-white' : 'text-slate-800'} rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}>
+   /* eslint-disable @next/next/no-img-element */
   <img
   src={post.imageUrl}
   alt={post.title}
   className='w-full h-48 object-cover rounded-t-lg'/>
-  
+  /* eslint-disable @next/next/no-img-element */
   <CardTitle className='text-xl font-nomral mt-4 text-center'>{post.title}</CardTitle> 
 <br />
 <CardContent className='text-center'>

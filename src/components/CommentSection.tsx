@@ -26,12 +26,15 @@ export default function CommentSection({ postId }: CommentSectionProps) {
         author: authorName,
         text: newComment,
       };
+      // Simulate sending to API with postId
+      console.log("Submitting comment for post:", postId, newCommentObj);
+  
       setComments([...comments, newCommentObj]);
       setNewComment("");
       setAuthorName("");
     }
   };
-
+  
   const handleEditComment = (commentID: string) => {
     const commentToEdit = comments.find((comment) => comment.id === commentID);
     if (commentToEdit) {
