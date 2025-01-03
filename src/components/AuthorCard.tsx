@@ -11,8 +11,14 @@ const AuthorCard = () => {
             Web Developer | Microbiologist | Content Writer{" "}
           </p>
           <p className="mt-4 text-black leading-relaxed">
-            Sarwat Jahan is an experienced Microbiologist with a passion for web
-            development and sharing knowledge{" "}
+            {" "}
+            I am a web developer and a microbiologist. I have a passion for
+            writing and sharing my knowledge with others. I am always looking
+            for new opportunities to learn and grow. As a web developer, 
+            I specialize in creating dynamic, user-friendly websites and applications that
+             blend functionality with aesthetics. With a strong foundation in HTML, CSS, JavaScript, 
+             and frameworks like Next.js, I aim to deliver responsive designs that perform seamlessly 
+             across devices. {" "}
           </p>
 
           <div className="mt-4 flex space-x-3">
